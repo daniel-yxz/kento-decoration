@@ -7,7 +7,7 @@
     <title>Kento Decorations</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="kento.png">
 
    <!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -30,7 +30,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.jpg" alt="">
+                    <img src="kento.png" alt="">
                 </div>
             </div>
         </div>
@@ -52,7 +52,6 @@
                                 <ul id="navigation">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">Sobre</a></li>
-                                    <li><a href="gallery.html">Produtos</a></li>
                                     <li><a href="services.html">Serviços</a></li>
                                     <li><a href="blog.html">Parceiros</a></li>
                                     <li><a href="contact.html">Contato</a></li>
@@ -81,7 +80,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap hero-cap2 text-center pt-80">
-                                <h2>Contact US</h2>
+                                <h2>Contate-nos</h2>
                             </div>
                         </div>
                     </div>
@@ -102,29 +101,29 @@
                     <div class="col-lg-8">
                         <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                             <div class="row">
-                                <div class="col-12">
+                                </div>
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = 'Digite seu nome'" placeholder="Nome:" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                        <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" placeholder="Email:" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                        <input class="form-control" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" name="tel" id="tel" type="tel" onfocus="this.placeholder = 'Digite seu número'" placeholder="Telefone:">
                                     </div>
                                 </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" id="message" onblur="this.placeholder = ''" placeholder="Dúvidas ou sugestões:"></textarea>
+                                    </div>
                             </div>
                             <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                                <button type="submit" class="button button-contactForm boxed-btn">Enviar</button>
                             </div>
                         </form>
                     </div>
