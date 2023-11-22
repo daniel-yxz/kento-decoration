@@ -18,7 +18,7 @@ $(document).ready(function(){
                 },
                 subject: {
                     required: true,
-                    minlength: 4
+                    minlength: 9
                 },
                 number: {
                     required: true,
